@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <data>
+        <variable
+            name="task"
+            type="gal.uvigo.taskmanager.Task" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                tools:ignore="ExtraText">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@{task.title}"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/md_on_primary"
+                    android:paddingBottom="8dp"
+                    android:maxLines="2"
+                    android:ellipsize="end" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCategory"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:categoryText="@{task.category}"
+                    android:textSize="14sp"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:layout_marginStart="8dp"
+                    android:clickable="false"
+                    android:checkable="false"
+                    android:focusable="false"
+                    android:enabled="false"
+                    android:textColor="@android:color/black"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{task.description}"
+                android:textSize="16sp"
+                android:textColor="@color/md_primary"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/dueDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text='@{`Due: ` + task.dueDate}'
+                android:textSize="14sp"
+                android:textColor="@color/md_secondary"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/isDone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text='@{task.isDone ? @string/task_completed : @string/task_pending}'
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#1976D2"
+                android:paddingBottom="16dp" />
+
+            <!-- Botón Delete -->
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/delete"
+                android:backgroundTint="@color/md_error"
+                android:textColor="@color/md_background"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </ScrollView>
+
+</layout>

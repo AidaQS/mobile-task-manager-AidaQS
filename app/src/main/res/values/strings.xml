@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">TaskManager</string>
+
+    <string name="add_task">Add task</string>
+    <string name="save">Save</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+
+    <string name="hint_title">Title</string>
+    <string name="hint_description">Description</string>
+    <string name="hint_category">Category</string>
+    <string name="hint_due_date">Due date</string>
+    <string name="complete">Completed</string>
+
+    <string name="task_details">Task details</string>
+
+    <!-- Validations -->
+    <string name="title_required">Title is required</string>
+
+    <!-- Dialog for saving task -->
+    <string name="confirm_save_title">Save task</string>
+    <string name="confirm_save_message">Do you want to save the changes?</string>
+    <string name="confirm_save_positive">Save</string>
+    <string name="confirm_save_negative">Cancel</string>
+
+    <!-- Dialog for deleting task -->
+    <string name="confirm_delete_title">Delete task</string>
+    <string name="confirm_delete_message">Are you sure you want to delete this task?</string>
+    <string name="confirm_delete_positive">Delete</string>
+    <string name="confirm_delete_negative">Cancel</string>
+
+    <string name="category_work">WORK</string>
+    <string name="category_personal">PERSONAL</string>
+    <string name="category_urgent">URGENT</string>
+    <string name="category_family">FAMILY</string>
+    <string name="category_shopping">SHOPPING</string>
+    <string name="category_other">OTHER</string>
+
+    <string name="task_completed">✅ Completed</string>
+    <string name="task_pending">⌛ Pending</string>
+
+</resources>
+

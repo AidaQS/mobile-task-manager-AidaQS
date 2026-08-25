@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">TaskManager</string>
+
+    <string name="add_task">Añadir tarea</string>
+    <string name="save">Guardar</string>
+    <string name="edit">Editar</string>
+    <string name="delete">Borrar</string>
+
+    <string name="hint_title">Título</string>
+    <string name="hint_description">Descripción</string>
+    <string name="hint_category">Categoría</string>
+    <string name="hint_due_date">Fecha límite</string>
+    <string name="complete">Completada</string>
+
+    <string name="task_details">Detalles de la tarea</string>
+
+    <!-- Validations -->
+    <string name="title_required">El título es obligatorio</string>
+
+    <!-- Dialog for saving task -->
+    <string name="confirm_save_title">Guardar tarea</string>
+    <string name="confirm_save_message">¿Deseas guardar los cambios?</string>
+    <string name="confirm_save_positive">Guardar</string>
+    <string name="confirm_save_negative">Cancelar</string>
+
+    <!-- Dialog for deleting task -->
+    <string name="confirm_delete_title">Borrar tarea</string>
+    <string name="confirm_delete_message">¿Estás seguro de que quieres borrar esta tarea?</string>
+    <string name="confirm_delete_positive">Borrar</string>
+    <string name="confirm_delete_negative">Cancelar</string>
+
+    <!-- Categories -->
+    <string name="category_work">TRABAJO</string>
+    <string name="category_personal">PERSONAL</string>
+    <string name="category_urgent">URGENTE</string>
+    <string name="category_family">FAMILIA</string>
+    <string name="category_shopping">COMPRAS</string>
+    <string name="category_other">OTRA</string>
+
+    <!-- Task status -->
+    <string name="task_completed">✅ Completada</string>
+    <string name="task_pending">⌛ Pendiente</string>
+</resources>

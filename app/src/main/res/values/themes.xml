@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.Theme.TaskManager" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/md_primary</item>
+        <item name="colorOnPrimary">@color/md_on_primary</item>
+        <item name="colorSecondary">@color/md_secondary</item>
+        <item name="colorOnBackground">@color/md_background</item>
+        <item name="colorSurface">@color/md_surface</item>
+        <item name="colorError">@color/md_error</item>
+
+        <item name= "textAppearanceHeadlineSmall">@style/TextTitle</item>
+        <item name="textAppearanceBodyMedium">@style/TextBody</item>
+    </style>
+
+    <style name="Theme.TaskManager" parent="Base.Theme.TaskManager" />
+
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/taskListFragment">
+
+    <fragment
+        android:id="@+id/taskListFragment"
+        android:name="gal.uvigo.taskmanager.TaskListFragment"
+        android:label="Task List"
+        tools:layout="@layout/fragment_task_list">
+
+        <!-- Navegar a DETALLE -->
+        <action
+            android:id="@+id/action_taskList_to_taskDetail"
+            app:destination="@id/taskDetailFragment" />
+
+        <!-- Navegar a FORMULARIO (añadir nueva tarea) -->
+        <action
+            android:id="@+id/action_taskList_to_taskForm"
+            app:destination="@id/taskFormFragment">
+            <argument
+                android:name="taskId"
+                app:argType="string"
+                android:defaultValue="-1" />
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/taskDetailFragment"
+        android:name="gal.uvigo.taskmanager.TaskDetailFragment"
+        android:label="Task Detail"
+        tools:layout="@layout/fragment_task_detail">
+
+        <argument
+            android:name="taskId"
+            app:argType="string" />
+
+        <!-- Navegar a FORMULARIO (editar una tarea) -->
+        <action
+            android:id="@+id/action_taskDetail_to_taskForm"
+            app:destination="@id/taskFormFragment">
+            <argument
+                android:name="taskId"
+                app:argType="string" />
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/taskFormFragment"
+        android:name="gal.uvigo.taskmanager.TaskFormFragment"
+        android:label="Task Form"
+        tools:layout="@layout/fragment_task_form">
+
+        <argument
+            android:name="taskId"
+            app:argType="string"
+            android:defaultValue="-1" />
+
+    </fragment>
+
+</navigation>
+
+
+
+
