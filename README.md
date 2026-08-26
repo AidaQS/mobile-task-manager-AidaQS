@@ -59,4 +59,3 @@ Elevate the look, feel and usability of the TaskManager by applying Material Des
 
 > This assignment is part of the Mobile Development course at Escola Superior de Enxeñaría Informática at Universidade de Vigo.  
 > See the course syllabus and lab instructions for more details.
-ee the course syllabus and lab instructions for more details.
